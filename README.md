@@ -5,16 +5,16 @@ I tried these binary classification algorithms to find out which one is best.
   - K-Nearest Neighbors (K-NN)
   - Support Vector Machine (SVM) 
     - RBF
-  - Linear
-  - Poly
-  - Sigmoid
-4. Precompiled
-5. Naive Bayes.
-6. Decision Tree Classification
-  - Criterion - entropy
-  - Criterion - gini
-7. Random Forest Classification
-8. Deep Learning (ANN)
+    - Linear
+    - Poly
+    - Sigmoid
+  - Precompiled
+  - Naive Bayes
+  - Decision Tree Classification
+    - Criterion (entropy)
+    - Criterion (gini)
+  - Random Forest Classification
+  - Deep Learning (ANN)
 
 I am using UCI Machine Learning Repository details are given bellow:
 http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
