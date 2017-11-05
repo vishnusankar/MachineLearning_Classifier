@@ -1,10 +1,10 @@
 # MachineLearning_Classifier
 I tried these binary classification algorithms to find out which one is best. 
 
-1. Logistic Regression
-2. K-Nearest Neighbors (K-NN)
-3. Support Vector Machine (SVM)
-  - RBF
+  - Logistic Regression
+  - K-Nearest Neighbors (K-NN)
+  - Support Vector Machine (SVM) 
+    - RBF
   - Linear
   - Poly
   - Sigmoid
