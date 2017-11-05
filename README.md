@@ -15,6 +15,8 @@ I tried these binary classification algorithms to find out which one is best.
     - Criterion (gini) - (894)
   - Random Forest Classification - (931)
   - Deep Learning (ANN) - (932)
+  - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+
 
 I am using UCI Machine Learning Repository details are given bellow:
 http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
