@@ -1,20 +1,20 @@
 # MachineLearning_Classifier
 I tried these binary classification algorithms to find out which one is best. 
 
-  - Logistic Regression
-  - K-Nearest Neighbors (K-NN)
+## Algorithms & Confusion Matrix's Correct Prediction
+  - Logistic Regression - (930)
+  - K-Nearest Neighbors (K-NN) - (922)
   - Support Vector Machine (SVM) 
-    - RBF
-    - Linear
-    - Poly
-    - Sigmoid
-  - Precompiled
-  - Naive Bayes
+    - RBF - (929)
+    - Linear - (932)
+    - Poly - (923)
+    - Sigmoid - (898)
+  - Naive Bayes - (856)
   - Decision Tree Classification
-    - Criterion (entropy)
-    - Criterion (gini)
-  - Random Forest Classification
-  - Deep Learning (ANN)
+    - Criterion (entropy) - (877)
+    - Criterion (gini) - (894)
+  - Random Forest Classification - (931)
+  - Deep Learning (ANN) - (932)
 
 I am using UCI Machine Learning Repository details are given bellow:
 http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
