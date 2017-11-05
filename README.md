@@ -4,15 +4,15 @@ I tried these binary classification algorithms to find out which one is best.
 1. Logistic Regression
 2. K-Nearest Neighbors (K-NN)
 3. Support Vector Machine (SVM)
-  1. RBF
-  2. Linear
-  3. Poly
-  4. Sigmoid
+  - RBF
+  - Linear
+  - Poly
+  - Sigmoid
 4. Precompiled
 5. Naive Bayes.
 6. Decision Tree Classification
-  1. Criterion - entropy
-  2. Criterion - gini
+  - Criterion - entropy
+  - Criterion - gini
 7. Random Forest Classification
 8. Deep Learning (ANN)
 
