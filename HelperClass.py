@@ -5,6 +5,10 @@ Created on Sat Nov  4 06:00:25 2017
 
 @author: Vishnusankar
 """
+
+import numpy as np
+import matplotlib.pyplot as plt
+
 class HelperClass():    
     def vsLabelEncoder (self, list=[]):
         from sklearn.preprocessing import LabelEncoder
