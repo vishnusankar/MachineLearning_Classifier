@@ -1,5 +1,6 @@
 # MachineLearning_Classifier
-I tried these binary classification algorithms to find out which one is best. 
+I tried these binary classification algorithms to find out which one is best.   
+### I need some suggestion from experts about is there way to improve any of these algorithms performance for this dataset.
 
 ## Algorithms & Confusion Matrix's Correct Prediction
 
