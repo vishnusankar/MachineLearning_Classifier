@@ -257,7 +257,7 @@ cm = obj.confusionMatrix(y_test, y_pred)
     [[873,56]
     [42,59]"""
     percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
-#    932 correct prediction 90.4854368932
+#    932 correct prediction 90.4854368932 %
     """When data sample count is 41188
     [[8828,311]
     [507,651]]"""
