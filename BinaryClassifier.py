@@ -8,7 +8,7 @@ from HelperClass import HelperClass
 
 
 # Importing the dataset
-dataset = pd.read_csv('bank-additional-full.csv', delimiter = ';')
+dataset = pd.read_csv('bank-additional.csv', delimiter = ';')
 X = dataset.iloc[:, 0:20].values
 y = dataset.iloc[:, 20].values
 
@@ -59,11 +59,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
     [[893,36]
     [64,37]]"""
-    #    930 correct prediction 83.109919571 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+    #    930 correct prediction 90.2912621359 %
     """When data sample count is 41188
     [[8904,235]
     [667,491]]"""
-#    9,395 correct prediction 22.8100417597 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    9,395 correct prediction 91.065358842381272 %
 obj.plotConfusionMatrix(cm)
 
 
@@ -74,11 +76,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """"When data sample count is 1119
     [[892,37]
     [71,30]]"""
-#    922 correct prediction 82.3949955317247 %, 
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    922 correct prediction 89.514563106796118 %, 
     """When data sample count is 41188
     [[8814,325]
     [695,463]]"""
-#    9277 correct prediction 22.5235505487
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    9277 correct prediction 90.094202194814017
 obj.plotConfusionMatrix(cm)
 
 # Fitting Support Vector Machine to the Training set & Predicting the Test set results
@@ -88,11 +92,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
     [[893,36]
     [65,36]]"""
-#    929 correct prediction
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    929 correct prediction 90.194174757281559 %
     """When data sample count is 41188
     [[8927,212]
     [712,446]]"""
-#    9,139 correct prediction 22.1885015053 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    9,139 correct prediction 91.026512576478595 %
 obj.plotConfusionMatrix(cm)
 
 # Fitting Support Vector Machine to the Training set & Predicting the Test set results
@@ -102,11 +108,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
 [[899,30]
     [68,33]]"""
-#    932 correct prediction
+percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    932 correct prediction 90.485436893203882 %
     """When data sample count is 41188
     [[8960,179]
     [810,348]]"""
-#    9,308 correct prediction 22.5988151889 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    9,308 correct prediction 90.395260755559875 %
 obj.plotConfusionMatrix(cm)
 
 # Fitting Support Vector Machine to the Training set & Predicting the Test set results
@@ -116,11 +124,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
 [[887,42]
     [65,36]]"""
-#    923 correct prediction
+percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    923 correct prediction 89.611650485436883 %
     """When data sample count is 41188
     [[8943,196]
     [733,425]]"""
-#    9,368 correct prediction 22.744488686 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    9,368 correct prediction 90.977954744100217 %
 obj.plotConfusionMatrix(cm)
 
 # Fitting Support Vector Machine to the Training set & Predicting the Test set results
@@ -130,11 +140,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
     [[860,69]
     [63,38]]"""
-#    898 correct prediction
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    898 correct prediction 87.184466019417471 %
     """When data sample count is 41188
     [[8446,693]
     [674,484]]"""
-#    8,930 correct prediction 21.6810721569 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    8,930 correct prediction 86.724288627755655 %
 obj.plotConfusionMatrix(cm)
 
 # Fitting Navie Bayes to the Training set & Predicting the Test set results
@@ -144,11 +156,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
     [[802,127]
     [47,54]]"""
-#   856 correct prediction
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#   856 correct prediction 83.106796116504853 %
     """When data sample count is 41188
     [[8035,1104]
     [441,717]]"""
-#    8,752 correct prediction 21.2489074488 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    8,752 correct prediction 84.995629795085947 %
 obj.plotConfusionMatrix(cm)
 
 # Fitting Decision Tree to the Training set & Predicting the Test set results
@@ -158,11 +172,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
     [[826,103]
     [50,51]]"""
-#    877 correct prediction
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    877 correct prediction 85.145631067961176  %
     """When data sample count is 41188
     [[8568,571]
     [543,615]]"""
-#    9,183 correct prediction 22.2953287365%
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    9,183 correct prediction 89.181314946100812 %
 obj.plotConfusionMatrix(cm)
 
 # Fitting Decision Tree to the Training set & Predicting the Test set results
@@ -172,11 +188,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
     [[844,84]
     [51,50]"""
-#  894 correct prediction
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#  894 correct prediction 86.796116504854368 %
     """When data sample count is 41188
     [[8554,585]
     [551,607]]"""
-#    9,368 correct prediction 22.2419151209 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    9,368 correct prediction 88.96766048363601 %
 obj.plotConfusionMatrix(cm)
 
 
@@ -184,15 +202,17 @@ obj.plotConfusionMatrix(cm)
 y_pred = obj.randomForestClassifier(X_train = X_train, y_train = y_train, X_test = X_test, n_estimators = 10, criterion = 'entropy')
 # Making the Confusion Matrix
 cm = obj.confusionMatrix(y_test, y_pred)
+percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
 """When data sample count is 1119
     [[890,39]
     [60,41]]"""
-#    931 correct prediction
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    931 correct prediction 90.388349514563103 %
     """When data sample count is 41188
     [[8864,275]
     [645,513]]"""
-    sdfsdf
-#    9,377 correct prediction 22.7663397106 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    9,377 correct prediction 91.0653588424 %
 obj.plotConfusionMatrix(cm)
 
 
@@ -236,11 +256,13 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
     [[873,56]
     [42,59]"""
-#    932 correct prediction
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    932 correct prediction 90.4854368932
     """When data sample count is 41188
     [[8828,311]
     [507,651]]"""
-#    9,479 correct prediction 23.0139846557 %
+    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+#    9,479 correct prediction 92.0559386229 %
 obj.plotConfusionMatrix(cm)
 
 !--------------------------------------------- Deep Learning ANN -----------------------------------------------------------
