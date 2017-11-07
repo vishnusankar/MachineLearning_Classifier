@@ -2,6 +2,11 @@
 I tried these binary classification algorithms to find out which one is best. 
 
 ## Algorithms & Confusion Matrix's Correct Prediction
+| Dataset Size | Logistic Regression | K-Nearest Neighbors (K-NN) |
+| :---:         |     :---:           |          :---: |
+| 4119          |90.2912621359 %      |     |
+| 41188         |91.065358842381272 % |       |
+
   - Logistic Regression - (930)
   - K-Nearest Neighbors (K-NN) - (922)
   - Support Vector Machine (SVM) 
