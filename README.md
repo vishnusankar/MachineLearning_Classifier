@@ -2,24 +2,23 @@
 I tried these binary classification algorithms to find out which one is best. 
 
 ## Algorithms & Confusion Matrix's Correct Prediction
-| Dataset Size | Logistic Regression | K-Nearest Neighbors (K-NN) |
-| :---:         |     :---:           |          :---: |
-| 4119          |90.2912621359 %      |     |
-| 41188         |91.065358842381272 % |       |
 
-  - Logistic Regression - (930)
-  - K-Nearest Neighbors (K-NN) - (922)
-  - Support Vector Machine (SVM) 
-    - RBF - (929)
-    - **Linear - (932)**
-    - Poly - (923)
-    - Sigmoid - (898)
-  - Naive Bayes - (856)
-  - Decision Tree Classification
-    - Criterion (entropy) - (877)
-    - Criterion (gini) - (894)
-  - Random Forest Classification - (931)
-  - **Deep Learning (ANN) - (932)**
+| Alogrithms | Small Dataset (4119) \nPrediction (%)  | Large Dataset (41188) \nPrediction (%)  |
+| :---:         |     :---:           |          :---: |
+| Logistic Regression |                |           |
+|K-Nearest Neighbors (K-NN) | 
+
+|Support Vector Machine (SVM) | 
+|RBF (SVM)                    | 
+|Linear (SVM)                 | 
+|Poly (SVM)                   | 
+|Sigmoid (SVM)                | 
+|Naive Bayes                  | 
+|Decision Tree Classification (entropy) | 
+|Decision Tree Classification (gini) | 
+|Random Forest Classification | 
+|Random Forest Classification | 
+| **Deep Learning (ANN)**     |
 
 I am using UCI Machine Learning Repository details are given bellow:
 http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
