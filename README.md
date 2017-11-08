@@ -20,7 +20,7 @@ I tried these binary classification algorithms to find out which one is best.
 
 ## Algorithms & Confusion Matrix's on TestData
 |Logistic Regression |
-| :---:       | :---:         |     :---:   ||     :---:   |:---:   |
+| :---:       | :---:         |     :---:   |     :---:   |:---:   |
 |Data size (41188)|Data size (41188)|
 |*Prediction* | NO  | YES  ||NO  | YES  |
 | *NO*        | 893|36|| 8904|235||
