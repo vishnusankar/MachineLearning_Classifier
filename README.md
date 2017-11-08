@@ -18,13 +18,13 @@ I tried these binary classification algorithms to find out which one is best.
 |**Random Forest Classification** | 90.388349514563103|:+1:91.0653588424|
 | **Deep Learning (ANN)**     |:+1::+1: **90.4854368932**|:+1::+1: **92.0559386229**|
 
-## Algorithms & Confusion Matrix's
-
-|-Prediction- | Alogrithms | NO  | YES  |
-| :---:         | :---:         |     :---:           |          :---: |
-| -NO- |
-| -YES-  |
-
+## Algorithms & Confusion Matrix's on TestData
+|Logistic Regression |
+|Data size (41188)|Data size (41188)|
+|*Prediction* | NO  | YES  ||NO  | YES  |
+| :---:       | :---:         |     :---:   ||     :---:   |
+| *NO*        | 8904|235||
+| *YES*       |667|491||
 
 I am using UCI Machine Learning Repository details are given bellow:
 http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
