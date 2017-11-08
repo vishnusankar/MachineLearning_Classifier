@@ -19,7 +19,7 @@ I tried these binary classification algorithms to find out which one is best.
 | **Deep Learning (ANN)**     |:+1::+1: **90.4854368932**|:+1::+1: **92.0559386229**|
 
 ## Algorithms & Confusion Matrix's on TestData
-|Logistic Regression |
+|Logistic Regression |         |        |        |   |
 | :---:       | :---:         |     :---:   |     :---:   |:---:   |
 |Data size (41188)|Data size (41188)|
 |*Prediction* | NO  | YES  ||NO  | YES  |
