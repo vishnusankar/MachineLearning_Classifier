@@ -20,11 +20,13 @@ I tried these binary classification algorithms to find out which one is best.
 
 ## Algorithms & Confusion Matrix's on TestData
 |Logistic Regression |
+| :---:       | 
 |Data size (41188)|Data size (41188)|
+| :---:       | :---:         |
 |*Prediction* | NO  | YES  ||NO  | YES  |
-| :---:       | :---:         |     :---:   ||     :---:   |
-| *NO*        | 8904|235||
-| *YES*       |667|491||
+| :---:       | :---:         |     :---:   ||     :---:   |:---:   |
+| *NO*        | 893|36|| 8904|235||
+| *YES*       |64|371||667|491||
 
 I am using UCI Machine Learning Repository details are given bellow:
 http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
