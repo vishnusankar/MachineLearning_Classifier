@@ -2,7 +2,7 @@
 I tried these binary classification algorithms to find out which one is best.   
 #### I need some suggestion from experts, is there way to improve any of these algorithms performance for this dataset.
 
-## Algorithms & Confusion Matrix's Correct Prediction
+## Algorithms & Percentage of Correct Prediction on TestData
 
 | Alogrithms | Small Dataset (4119) Prediction (%)  | Large Dataset (41188) Prediction (%)  |
 | :---:         |     :---:           |          :---: |
@@ -17,6 +17,14 @@ I tried these binary classification algorithms to find out which one is best.
 |Decision Tree Classification (gini) | 86.796116504854368|88.96766048363601|
 |**Random Forest Classification** | 90.388349514563103|:+1:91.0653588424|
 | **Deep Learning (ANN)**     |:+1::+1: **90.4854368932**|:+1::+1: **92.0559386229**|
+
+## Algorithms & Confusion Matrix's
+
+|-Prediction- | Alogrithms | NO  | YES  |
+| :---:         | :---:         |     :---:           |          :---: |
+| -NO- |
+| -YES-  |
+
 
 I am using UCI Machine Learning Repository details are given bellow:
 http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
