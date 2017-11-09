@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from HelperClass import HelperClass
-
+from EstimatorSelectionHelper import EstimatorSelectionHelper
 
 # Importing the dataset
 dataset = pd.read_csv('bank-additional.csv', delimiter = ';')
@@ -59,7 +59,7 @@ cm = obj.confusionMatrix(y_test, y_pred)
 """When data sample count is 1119
     [[893,36]
     [64,37]]"""
-    percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
+    percentage = ((cm[0,0]+cm[1,1])/((cm[0,0]+cm[1,1]+cm[1,0]+cm[0,1])*100))
     #    930 correct prediction 90.2912621359 %
     """When data sample count is 41188
     [[8904,235]
@@ -82,7 +82,7 @@ cm = obj.confusionMatrix(y_test, y_pred)
     [[8814,325]
     [695,463]]"""
     percentage = (cm[0,0]+cm[1,1])/(cm[0,0]+cm[1,1]+(cm[1,0]+cm[0,1]))*100
-#    9277 correct prediction 90.094202194814017
+#    9277 correct prediction 90.094202194814017 %
 obj.plotConfusionMatrix(cm)
 
 # Fitting Support Vector Machine to the Training set & Predicting the Test set results
@@ -244,7 +244,8 @@ classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = [
 # Fitting the ANN to the Training set
 classifier.fit(X_train, y_train, batch_size = 30, epochs = 100)
 
-# Part 3 - Making predictions and evaluating the model
+# Part 3 - Making predicti
+ons and evaluating the model
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
@@ -265,8 +266,48 @@ cm = obj.confusionMatrix(y_test, y_pred)
 #    9,479 correct prediction 92.0559386229 %
 obj.plotConfusionMatrix(cm)
 
-!--------------------------------------------- Deep Learning ANN -----------------------------------------------------------
 
+
+!--------------------------------------------- Deep Learning ANN -----------------------------------------------------------
+from sklearn.ensemble import (ExtraTreesClassifier, RandomForestClassifier, 
+                              AdaBoostClassifier, GradientBoostingClassifier)
+from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
+
+
+models1 = { 
+    'ExtraTreesClassifier': ExtraTreesClassifier(),
+    'RandomForestClassifier': RandomForestClassifier(),
+    'AdaBoostClassifier': AdaBoostClassifier(),
+    'GradientBoostingClassifier': GradientBoostingClassifier(),
+    'DecisionTreeClassifier' : DecisionTreeClassifier(),
+    'GaussianNB' : GaussianNB(),
+    'LogisticRegression' : LogisticRegression(),
+    'KNeighborsClassifier' : KNeighborsClassifier(),
+    'SVC': SVC()
+}
+
+params1 = { 
+    'ExtraTreesClassifier': { 'n_estimators': [16, 32] },
+    'RandomForestClassifier': { 'n_estimators': [16, 32] },
+    'AdaBoostClassifier':  { 'n_estimators': [16, 32] },
+    'GradientBoostingClassifier': { 'n_estimators': [16, 32], 'learning_rate': [0.8, 1.0] },
+    'DecisionTreeClassifier' : {'criterion' : ['entropy','gini'], 'random_state' : [0]},
+    'GaussianNB' : {},
+    'LogisticRegression' : {'random_state' : [0]},
+    'KNeighborsClassifier' : {'n_neighbors' : [5], 'metric' : ['minkowski'], 'p' : [2]},
+    'SVC': [
+        {'kernel': ['linear','poly','sigmoid'], 'C': [1, 10], 'random_state' : [0]},
+        {'kernel': ['rbf'], 'C': [1, 10], 'gamma': [0.001, 0.0001],'random_state' : [0]},
+    ]
+}
+
+helper1 = EstimatorSelectionHelper(models1, params1)
+helper1.fit(X_train, y_train, scoring='f1', n_jobs=-1)
+result = helper1.score_summary(sort_by='min_score')
 
 
 
