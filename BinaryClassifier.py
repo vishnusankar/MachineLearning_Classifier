@@ -309,5 +309,10 @@ helper1 = EstimatorSelectionHelper(models1, params1)
 helper1.fit(X_train, y_train, scoring='f1', n_jobs=-1)
 result = helper1.score_summary(sort_by='min_score')
 
+result.to_csv('test', sep='\t', encoding='utf-8')
 
-
+from prettytable import PrettyTable
+from prettytable import from_csv
+fp = open("test", "r")
+mytable = from_csv(fp)
+     print(mytable)
