@@ -53,3 +53,18 @@ class EstimatorSelectionHelper():
         columns = columns + [c for c in df.columns if c not in columns]
         
         return df[columns]
+    
+    def predict_on_bestEstimator(self, X_test, key):
+        gs = self.grid_searches[key]
+        return gs.predict(X_test)
+    
+    def confusionMatrix (self, y_test = [], y_pred = []):
+        from sklearn.metrics import confusion_matrix
+        return confusion_matrix(y_test, y_pred)        
+    
+    def plotConfusionMatrix (self, cm):
+        from mlxtend.plotting import plot_confusion_matrix
+        import matplotlib.pyplot as plt
+        fig, ax = plot_confusion_matrix(conf_mat=cm)
+        plt.show()
+        
