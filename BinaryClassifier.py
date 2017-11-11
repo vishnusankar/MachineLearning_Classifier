@@ -4,7 +4,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-from HelperClass import HelperClass
 from EstimatorSelectionHelper import EstimatorSelectionHelper
 
 # Importing the dataset
