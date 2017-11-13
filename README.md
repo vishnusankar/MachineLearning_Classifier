@@ -2,7 +2,7 @@
 I tried these binary classification algorithms to find out which one is best.   
 #### I need some suggestion from experts, is there way to improve any of these algorithms performance for this dataset.
 
-# Models' Scores
+# Models Score with Train dataset
 |    |         estimator          |   min_score    |   mean_score   |   max_score    |    std_score     | C  | criterion | gamma  |  kernel | learning_rate |   metric  | n_estimators | n_neighbors | p | random_state |
 |  :---:   |         :---:           |   :---:     |   :---:    |   :---:     |    :---:      | :---:   | :---:  | :---:   |  :---:  | :---:  |   :---:   | :---:  | :---:  | :---:  | :---:  |
 | 4  |     AdaBoostClassifier     |     0.5625     | 0.570569562017 | 0.584615384615 | 0.0099685949219  |    |           |        |         |               |           |      16      |             |   |              |
