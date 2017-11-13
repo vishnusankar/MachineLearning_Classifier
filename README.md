@@ -32,6 +32,15 @@ I tried these binary classification algorithms to find out which one is best.
 | 22 |            SVC             |      0.0       |      0.0       |      0.0       |       0.0        | 1  |           | 0.0001 |   rbf   |               |           |              |             |   |      0       |
 
 
+# AdaBoostClassifier Predition on Test Data
+
+| |   precision |    recall |  f1-score |   support |
+|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
+   |        0   |     0.94  |     0.96      | 0.95      |  929| 
+    |       1   |     0.57  |     0.48 |      0.52 |       101| 
+
+avg / total   |     0.91    |   0.91   |    0.91   |    1030| 
+
 I am using UCI Machine Learning Repository details are given bellow:
 http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
 
