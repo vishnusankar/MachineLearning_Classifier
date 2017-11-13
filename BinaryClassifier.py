@@ -4,6 +4,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from HelperClass import HelperClass
 from EstimatorSelectionHelper import EstimatorSelectionHelper
 
 # Importing the dataset
@@ -102,5 +103,11 @@ mytable = from_csv(fp)
 print(mytable)
      
 y_pred = helper1.predict_on_bestEstimator(X_test,'DecisionTreeClassifier')
+#from sklearn.metrics import classification_report
+#target_names = ['class 0', 'class 1']
+#print(classification_report(y_test, y_pred, target_names=target_names))
+
+
+
 cm = helper1.confusionMatrix(y_test,y_pred)
 helper1.plotConfusionMatrix(cm)

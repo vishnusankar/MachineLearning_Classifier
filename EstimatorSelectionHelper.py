@@ -11,6 +11,7 @@ http://www.codiply.com/blog/hyperparameter-grid-search-across-multiple-models-in
 import numpy as np
 import pandas as pd
 from sklearn.grid_search import GridSearchCV
+from sklearn.metrics import classification_report
 
 class EstimatorSelectionHelper():
     def __init__(self, models, params):
@@ -46,9 +47,10 @@ class EstimatorSelectionHelper():
         rows = [row(k, gsc.cv_validation_scores, gsc.parameters) 
                      for k in self.keys
                      for gsc in self.grid_searches[k].grid_scores_]
-        df = pd.concat(rows, axis=1).T
+        df = pd.concat(rows, axis=1).T.sort_values([sort_by], ascending=False)
+
         print("array after concat %s" % df)
-#                .sort([sort_by], ascending=False)
+#
         columns = ['estimator', 'min_score', 'mean_score', 'max_score', 'std_score']
         columns = columns + [c for c in df.columns if c not in columns]
         
@@ -60,6 +62,7 @@ class EstimatorSelectionHelper():
     
     def confusionMatrix (self, y_test = [], y_pred = []):
         from sklearn.metrics import confusion_matrix
+        print(classification_report(y_test, y_pred, target_names=['0','1']))
         return confusion_matrix(y_test, y_pred)        
     
     def plotConfusionMatrix (self, cm):
@@ -67,4 +70,5 @@ class EstimatorSelectionHelper():
         import matplotlib.pyplot as plt
         fig, ax = plot_confusion_matrix(conf_mat=cm)
         plt.show()
+        
         
