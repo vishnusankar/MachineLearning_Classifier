@@ -58,6 +58,7 @@ class EstimatorSelectionHelper():
     
     def predict_on_bestEstimator(self, X_test, key):
         gs = self.grid_searches[key]
+#        print(self.grid_searches)
         return gs.predict(X_test)
     
     def confusionMatrix (self, y_test = [], y_pred = []):

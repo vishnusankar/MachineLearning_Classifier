@@ -14,7 +14,7 @@ y = dataset.iloc[:, 20].values
 
 
 obj = HelperClass()
-
+## Label encoder
 #Job Type Categorical
 X[:, 1] = obj.vsLabelEncoder(list = X[:,1])
 # Marial Status Categorical
@@ -91,7 +91,7 @@ params1 = {
 }
 
 helper1 = EstimatorSelectionHelper(models1, params1)
-helper1.fit(X_train, y_train, scoring='f1', n_jobs=-1,refit=True)
+helper1.fit(X_train, y_train, scoring='f1', n_jobs=-1,refit=True, verbose = 2)
 result = helper1.score_summary(sort_by='min_score')
 
 result.to_csv('test', sep='\t', encoding='utf-8')
@@ -102,12 +102,10 @@ fp = open("test", "r")
 mytable = from_csv(fp)
 print(mytable)
      
-y_pred = helper1.predict_on_bestEstimator(X_test,'DecisionTreeClassifier')
-#from sklearn.metrics import classification_report
-#target_names = ['class 0', 'class 1']
-#print(classification_report(y_test, y_pred, target_names=target_names))
+for x in params1.keys():
+    y_pred = helper1.predict_on_bestEstimator(X_test,x)
+    print("%s Predition on Test Data" % x)
+    cm = helper1.confusionMatrix(y_test,y_pred)
+    
 
-
-
-cm = helper1.confusionMatrix(y_test,y_pred)
 helper1.plotConfusionMatrix(cm)
