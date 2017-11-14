@@ -62,36 +62,36 @@ I tried these binary classification algorithms to find out which one is best.
 # DecisionTreeClassifier Predition on Test Data
 | |   precision |    recall |  f1-score |   support |
 |  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
-    |      0  |     0.94   |   0.91   |   0.93    |   929 |
-   |       1    |   0.37   |   0.50   |   0.42  |     101 |
+|      0  |     0.94   |   0.91   |   0.93    |   929 
+|       1    |   0.37   |   0.50   |   0.42  |     101 |
 | avg / total   |    0.89  |    0.87   |   0.88  |    1030 |
 
 # GaussianNB Predition on Test Data
 | |   precision |    recall |  f1-score |   support |
 |  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
-   |       0   |    0.94   |   0.86  |    0.90   |    929 |
-   |       1   |    0.30  |    0.53   |   0.38   |    101 |
+|       0   |    0.94   |   0.86  |    0.90   |    929 |
+|       1   |    0.30  |    0.53   |   0.38   |    101 |
 | avg / total    |   0.88  |    0.83     | 0.85    |  1030 |
 
 # LogisticRegression Predition on Test Data
              precision    recall  f1-score   support
 |  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
 |          0    |   0.93  |    0.96  |    0.95   |    929 |
-   |       1    |   0.51  |    0.37   |   0.43    |   101 |
+|       1    |   0.51  |    0.37   |   0.43    |   101 |
 |avg / total  |     0.89   |   0.90    |  0.90   |   1030 |
 
 # KNeighborsClassifier Predition on Test Data
 | |   precision |    recall |  f1-score |   support |
 |  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
-   |       0   |    0.93  |    0.96   |   0.94   |    929 |
-     |     1    |   0.45  |    0.30   |   0.36    |   101 |
+|       0   |    0.93  |    0.96   |   0.94   |    929 |
+|     1    |   0.45  |    0.30   |   0.36    |   101 |
 |avg / total    |   0.88    |  0.90  |    0.89  |    1030 |
 
 # SVC Predition on Test Data
 | |   precision |    recall |  f1-score |   support |
 |  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
 |          0      | 0.94    |  0.94   |   0.94    |   929 |
-   |       1   |    0.43   |   0.45  |    0.44  |     101 |
+|       1   |    0.43   |   0.45  |    0.44  |     101 |
 |avg / total   |    0.89   |   0.89     | 0.89   |   1030 |
 
 
