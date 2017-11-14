@@ -42,7 +42,7 @@ I tried these binary classification algorithms to find out which one is best.
 | |   precision |    recall |  f1-score |   support |
 |  :---:|:---:|   :---:     |  :---:     |  :---:     |  
 |      0   |    0.94   |   0.96    |  0.95   |    929 |
-|        1       0.54    |  0.45   |   0.49   |    101 | 
+|        1   |    0.54    |  0.45   |   0.49   |    101 | 
 | avg / total   |    0.90  |    0.91 |     0.90    |  1030 |
 
 # AdaBoostClassifier Predition on Test Data
