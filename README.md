@@ -33,24 +33,24 @@ I tried these binary classification algorithms to find out which one is best.
 
 # ExtraTreesClassifier Predition on Test Data
 | |   precision |    recall |  f1-score |   support |
-|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
-    |      0     |  0.94 |     0.96   |   0.95  |     929 |
-   |       1    |   0.49   |   0.40   |   0.44  |     101 |
+|  :---:|:---:|   :---:     |  :---:     |  :---:     |  
+|      0     |  0.94 |     0.96   |   0.95  |     929 |
+|       1    |   0.49   |   0.40   |   0.44  |     101 |
 | avg / total    |   0.89 |     0.90  |    0.90   |   1030 |
 
 # RandomForestClassifier Predition on Test Data
 | |   precision |    recall |  f1-score |   support |
-|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
-    |      0   |    0.94   |   0.96    |  0.95   |    929 |
-  |        1       0.54    |  0.45   |   0.49   |    101 | 
+|  :---:|:---:|   :---:     |  :---:     |  :---:     |  
+|      0   |    0.94   |   0.96    |  0.95   |    929 |
+|        1       0.54    |  0.45   |   0.49   |    101 | 
 | avg / total   |    0.90  |    0.91 |     0.90    |  1030 |
 
 # AdaBoostClassifier Predition on Test Data
 | |   precision |    recall |  f1-score |   support |
 |  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
-  |        0    |   0.94  |    0.96   |   0.95   |    929 |
-  |        1    |   0.57   |   0.48   |   0.52   |    101 |
- | avg / total   |    0.91   |   0.91  |    0.91   |   1030 |
+|        0    |   0.94  |    0.96   |   0.95   |    929 |
+|        1    |   0.57   |   0.48   |   0.52   |    101 |
+| avg / total   |    0.91   |   0.91  |    0.91   |   1030 |
 
 # GradientBoostingClassifier Predition on Test Data
 | |   precision |    recall |  f1-score |   support |
@@ -74,10 +74,10 @@ I tried these binary classification algorithms to find out which one is best.
 | avg / total    |   0.88  |    0.83     | 0.85    |  1030 |
 
 # LogisticRegression Predition on Test Data
-             precision    recall  f1-score   support
-|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
-|          0    |   0.93  |    0.96  |    0.95   |    929 |
-|       1    |   0.51  |    0.37   |   0.43    |   101 |
+| |    precision |    recall |  f1-score |   support |
+|  :---: | :---:  |   :---:     |  :---:     |  :---:     |  
+|    0    |   0.93  |    0.96  |    0.95   |    929 |
+|    1    |   0.51  |    0.37   |   0.43    |   101 |
 |avg / total  |     0.89   |   0.90    |  0.90   |   1030 |
 
 # KNeighborsClassifier Predition on Test Data
