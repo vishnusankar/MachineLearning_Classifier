@@ -31,23 +31,70 @@ I tried these binary classification algorithms to find out which one is best.
 | 21 |            SVC             | 0.310810810811 | 0.322824382824 | 0.337662337662 | 0.0111425304522  | 1  |           | 0.001  |   rbf   |               |           |              |             |   |      0       |
 | 22 |            SVC             |      0.0       |      0.0       |      0.0       |       0.0        | 1  |           | 0.0001 |   rbf   |               |           |              |             |   |      0       |
 
+# ExtraTreesClassifier Predition on Test Data
+| |   precision |    recall |  f1-score |   support |
+|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
+    |      0     |  0.94 |     0.96   |   0.95  |     929 |
+   |       1    |   0.49   |   0.40   |   0.44  |     101 |
+| avg / total    |   0.89 |     0.90  |    0.90   |   1030 |
+
+# RandomForestClassifier Predition on Test Data
+| |   precision |    recall |  f1-score |   support |
+|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
+    |      0   |    0.94   |   0.96    |  0.95   |    929 |
+  |        1       0.54    |  0.45   |   0.49   |    101 | 
+| avg / total   |    0.90  |    0.91 |     0.90    |  1030 |
 
 # AdaBoostClassifier Predition on Test Data
-
 | |   precision |    recall |  f1-score |   support |
 |  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
-|         0   |     0.94  |     0.96      | 0.95      |  929| 
-|        1   |     0.57  |     0.48 |      0.52 |       101| 
-| avg / total |    0.91    |   0.91   |    0.91   |    1030| 
+  |        0    |   0.94  |    0.96   |   0.95   |    929 |
+  |        1    |   0.57   |   0.48   |   0.52   |    101 |
+ | avg / total   |    0.91   |   0.91  |    0.91   |   1030 |
 
+# GradientBoostingClassifier Predition on Test Data
+| |   precision |    recall |  f1-score |   support |
+|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
+ |         0    |   0.93   |   0.95   |   0.94  |     929 |
+ |         1    |   0.44   |   0.38   |   0.41   |    101 |
+| avg / total     |  0.89  |    0.89  |    0.89    |  1030 |
 
 # DecisionTreeClassifier Predition on Test Data
-
 | |   precision |    recall |  f1-score |   support |
 |  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
-  |        0   |    0.94  |    0.91  |    0.93  |     929|
-  |        1   |    0.37 |     0.50  |    0.42   |    101|
-|avg / total     |  0.89    |  0.87    |  0.88    |  1030|
+    |      0  |     0.94   |   0.91   |   0.93    |   929 |
+   |       1    |   0.37   |   0.50   |   0.42  |     101 |
+| avg / total   |    0.89  |    0.87   |   0.88  |    1030 |
+
+# GaussianNB Predition on Test Data
+| |   precision |    recall |  f1-score |   support |
+|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
+   |       0   |    0.94   |   0.86  |    0.90   |    929 |
+   |       1   |    0.30  |    0.53   |   0.38   |    101 |
+| avg / total    |   0.88  |    0.83     | 0.85    |  1030 |
+
+# LogisticRegression Predition on Test Data
+             precision    recall  f1-score   support
+|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
+|          0    |   0.93  |    0.96  |    0.95   |    929 |
+   |       1    |   0.51  |    0.37   |   0.43    |   101 |
+|avg / total  |     0.89   |   0.90    |  0.90   |   1030 |
+
+# KNeighborsClassifier Predition on Test Data
+| |   precision |    recall |  f1-score |   support |
+|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
+   |       0   |    0.93  |    0.96   |   0.94   |    929 |
+     |     1    |   0.45  |    0.30   |   0.36    |   101 |
+|avg / total    |   0.88    |  0.90  |    0.89  |    1030 |
+
+# SVC Predition on Test Data
+| |   precision |    recall |  f1-score |   support |
+|  :---:|:---:           |   :---:     |  :---:     |  :---:     |  
+|          0      | 0.94    |  0.94   |   0.94    |   929 |
+   |       1   |    0.43   |   0.45  |    0.44  |     101 |
+|avg / total   |    0.89   |   0.89     | 0.89   |   1030 |
+
+
 
 I am using UCI Machine Learning Repository details are given bellow:
 http://archive.ics.uci.edu/ml/datasets/Bank+Marketing
