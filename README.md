@@ -5,7 +5,8 @@ I tried these binary classification algorithms to find out which one is best.
 # Models Score with Train dataset
 |    |         estimator          |   min_score    |   mean_score   |   max_score    |    std_score     | C  | criterion | gamma  |  kernel | learning_rate |   metric  | n_estimators | n_neighbors | p | random_state |
 |  :---:   |         :---:           |   :---:     |   :---:    |   :---:     |    :---:      | :---:   | :---:  | :---:   |  :---:  | :---:  |   :---:   | :---:  | :---:  | :---:  | :---:  |
-| 4  |     ##AdaBoostClassifier##    |     ##0.5625##     | ##0.570569562017## | 0.584615384615 | 0.0099685949219  |    |           |        |         |               |           |      16      |             |   |              |
+| 4  |     ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+AdaBoostClassifier    |     0.5625     | 0.570569562017 | 0.584615384615 | 0.0099685949219  |    |           |        |         |               |           |      16      |             |   |              |
 | 5  |     AdaBoostClassifier     | 0.547169811321 | 0.570006638746 | 0.587628865979 | 0.0169239045404  |    |           |        |         |               |           |      32      |             |   |              |
 | 11 |   DecisionTreeClassifier   | 0.544642857143 | 0.560393772894 |     0.575      | 0.0124196555154  |    |    gini   |        |         |               |           |              |             |   |      0       |
 | 8  | GradientBoostingClassifier | 0.543778801843 | 0.569085225282 | 0.593301435407 | 0.0202322223621  |    |           |        |         |      1.0      |           |      16      |             |   |              |
